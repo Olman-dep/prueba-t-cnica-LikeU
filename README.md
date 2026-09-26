@@ -41,4 +41,4 @@ pip install -r requirements.txt
 
 Para el punto 3 de power bi 
 Este fue el lienzo que se hizo en figma
-Power BI/Lienzo.png
+{DBEBF59A-BAE0-4507-9181-DC6B546A4A4E}
