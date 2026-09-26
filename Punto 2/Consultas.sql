@@ -56,19 +56,18 @@ pares_respuesta AS (
         conversation_id,
         created_at AS ts_incoming,
         siguiente_ts AS ts_respuesta,
-        EXTRACT(EPOCH FROM (siguiente_ts - created_at)) / 60.0 AS minutos_respuesta
-        -- MySQL equivalente: TIMESTAMPDIFF(MINUTE, created_at, siguiente_ts)
+        TIMESTAMPDIFF(SECOND, created_at, siguiente_ts) / 60.0 AS minutos_respuesta
     FROM ordenado
     WHERE message_type = 'incoming'
       AND siguiente_tipo IN ('activity', 'outgoing')
 )
 SELECT
-    ROUND(AVG(minutos_respuesta)::numeric, 2)  AS sla_promedio_minutos,
-    ROUND(MIN(minutos_respuesta)::numeric, 2)  AS sla_min_minutos,
-    ROUND(MAX(minutos_respuesta)::numeric, 2)  AS sla_max_minutos,
-    COUNT(*)                                   AS conversaciones_evaluadas
+    ROUND(AVG(minutos_respuesta), 2)  AS sla_promedio_minutos,
+    ROUND(MIN(minutos_respuesta), 2)  AS sla_min_minutos,
+    ROUND(MAX(minutos_respuesta), 2)  AS sla_max_minutos,
+    COUNT(*)                          AS conversaciones_evaluadas
 FROM pares_respuesta
-WHERE minutos_respuesta >= 0;   -- filtra timestamps inconsistentes/duplicados
+WHERE minutos_respuesta >= 0;
 
 -- Resultado observado: promedio ~131.7 minutos, con outliers de +2600 min
 -- (sugiere revisar conversaciones abandonadas o sin cierre)
@@ -80,7 +79,7 @@ WHERE minutos_respuesta >= 0;   -- filtra timestamps inconsistentes/duplicados
 -- para dimensionar turnos (Workforce Management).
 -- ------------------------------------------------------------
 SELECT
-    EXTRACT(HOUR FROM created_at)::int AS hora_del_dia,
+    EXTRACT(HOUR FROM created_at) AS hora_del_dia,
     COUNT(*)                            AS volumen_incoming
     -- MySQL equivalente: HOUR(created_at)
 FROM mensajes
