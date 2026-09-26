@@ -1,3 +1,4 @@
+<img width="1115" height="824" alt="{DBEBF59A-BAE0-4507-9181-DC6B546A4A4E}" src="https://github.com/user-attachments/assets/fd8ff28b-99dc-4c16-b974-31a43639ae4d" />
 ## Pasos Para Usar el proyecto
 
 ###  Crear el entorno virtual (venv)
@@ -41,4 +42,5 @@ pip install -r requirements.txt
 
 Para el punto 3 de power bi 
 Este fue el lienzo que se hizo en figma
-{DBEBF59A-BAE0-4507-9181-DC6B546A4A4E}
+<img width="1115" height="824" alt="{DBEBF59A-BAE0-4507-9181-DC6B546A4A4E}" src="https://github.com/user-attachments/assets/1d234884-72e6-47c8-b725-f83fee106603" />
+
