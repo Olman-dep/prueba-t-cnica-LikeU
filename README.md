@@ -151,4 +151,4 @@ Si el reporte se despliega y 50 usuarios lo abren simultáneamente refrescando c
 
 ## 👤 Autor
 
-_Completa con tu nombre y contacto._
+Olman Alejandro Zapata Florez 
