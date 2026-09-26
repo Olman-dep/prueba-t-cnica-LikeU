@@ -66,7 +66,9 @@ Para generar acción en la operación, se diseñó un tablero interactivo consol
 Diseño inicial de la interfaz (Figma):<img width="1115" height="824" alt="{DBEBF59A-BAE0-4507-9181-DC6B546A4A4E}" src="https://github.com/user-attachments/assets/1d234884-72e6-47c8-b725-f83fee106603" />
 
 
-Resultado Final del Tablero (Power BI):![alt text]({456CB612-C59D-4F49-B7B2-F09AC1EB0E97}.png)
+Resultado Final del Tablero (Power BI):<img width="964" height="544" alt="image" src="https://github.com/user-attachments/assets/1d67f799-b75c-4cad-acea-cf1bbdc1b68a" />
+
+
 
 🧠 Visión de Negocio y Escalabilidad (Mindset FinOps)
 Diagnóstico de la Campaña y Acciones Sugeridas
