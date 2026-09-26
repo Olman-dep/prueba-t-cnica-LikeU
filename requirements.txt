@@ -1,0 +1,19 @@
+# --- Manipulación y análisis de datos ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- Notebook / entorno de trabajo ---
+jupyterlab==4.2.5
+ipykernel==6.29.5
+
+# --- Conexión a base de datos relacional (MySQL) ---
+sqlalchemy==2.0.35
+pymysql==1.1.1
+cryptography==43.0.1
+
+# --- Utilidades ---
+python-dotenv==1.0.1   # para no dejar credenciales de la BD hardcodeadas
+openpyxl==3.1.5         # por si necesitas exportar/leer algo en Excel
+
+# --- Visualización rápida (opcional, para validar antes del dashboard) ---
+matplotlib==3.9.2
