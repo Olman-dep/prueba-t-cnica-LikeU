@@ -43,3 +43,5 @@ Para el punto 3 de power bi
 Este fue el lienzo que se hizo en figma
 <img width="1115" height="824" alt="{DBEBF59A-BAE0-4507-9181-DC6B546A4A4E}" src="https://github.com/user-attachments/assets/1d234884-72e6-47c8-b725-f83fee106603" />
 
+y este fue como quedo 
+![alt text]({456CB612-C59D-4F49-B7B2-F09AC1EB0E97}.png)
